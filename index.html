@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2&family=Josefin+Slab&family=Nanum+Gothic&display=swap" rel="stylesheet">
     <script type="text/javascript" defer src="./javascript/home.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./css/homeStyle.css">
@@ -8,22 +9,21 @@
     <title>Home</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <body>
-        <div id="image" > 
+        <div class="hamburger-menu">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+        </div>
+        <header class="header">
+            <div class="home-image-wrapper">
+                <img src="./imges/motorcycle2.1.png">
             </div>
-        <nav >
-            <a href="./index.html"><button id="one">Home</button></a>
-            <a href="./html/gallary.html"><button id="two">Gallary</button></a>
-            <a href=""><button id="three">About</button></a>
-        </nav>
-        <h1 id="h1">Tattoo Artist company name</h1>
-        <h3 id="name">terin</h3>
-        <section class="item-wrapper">
-            <div class="item" data-aos="zoom-in" data-aos-delay="500"></div>
-            <div class="item2" data-aos="fade-up" data-aos-delay="500"></div>
-        </section>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
+            <div class="banner">
+                <h1 class="h1">
+                    Company Name
+                </h1>
+                <p class="littleSaying">Little Saying (optional)</p>
+                <button class="homeButton">About</button>
+            </div>
+        </header>
     </body>
 </html>
