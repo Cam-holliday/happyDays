@@ -1,0 +1,31 @@
+h1{
+    color: thistle;
+    border: 1px solid green;
+    margin-bottom: 100px;
+}
+
+#box-wrapper{
+    margin: none;
+    align-content: space-around;
+    justify-content: space-evenly;
+    width: 100%;
+    height:fit-content;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction:row;   
+}
+
+.box{
+    min-width: 260px;
+   height: 40vh;
+   width: 30vw;
+   margin-top: 20px;
+}
+
+.gallary-img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%; 
+}
+
+

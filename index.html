@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
+    <script type="text/javascript" defer src="./javascript/home.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./css/homeStyle.css">
     <meta charset="UTF-8">
     <title>Home</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <body>
-        <h1>hi</h1>
+        <div id="image" > 
+            </div>
+        <nav >
+            <a href="./index.html"><button id="one">Home</button></a>
+            <a href="./html/gallary.html"><button id="two">Gallary</button></a>
+            <a href=""><button id="three">About</button></a>
+        </nav>
+        <h1 id="h1">Tattoo Artist company name</h1>
+        <h3 id="name">terin</h3>
+        <section class="item-wrapper">
+            <div class="item" data-aos="zoom-in" data-aos-delay="500"></div>
+            <div class="item2" data-aos="fade-up" data-aos-delay="500"></div>
+        </section>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
