@@ -102,16 +102,18 @@ html{
 }
 
 .hamburger-menu{
+   
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     cursor: pointer;
-    width: 3rem;
+    width: 6rem;
     height: 3rem;
     position: fixed;
     top: 5rem;
     right: 5rem;
-    z-index: 2;
+    z-index: 200;
+    
 }
 
 .line{
@@ -120,4 +122,90 @@ html{
     height: .2rem;
     background-color: white;
     box-shadow: 0.1rem 0.2rem rgba(0, 0, 0, .2);
+}
+/*
+.line-1{
+    width: 80%;
+    margin-bottom: 10px;
+    
+}
+
+.line-2{
+    width: 80%;
+    float: right;
+    
+}*/
+
+.sidebar{
+    width: 40rem;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -40rem;
+    background-color: white;
+    transition:  right .5s;
+}
+
+.change .sidebar{
+    right: 0;
+}
+
+.menu{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+}
+
+.menu-item{
+    text-align: center;
+    margin: 20px;
+}
+
+.menu-link{
+    font-family: 'Josefin Slab', serif;
+    color: #555;
+    position: relative;
+}
+
+.menu-link::before{
+    content: attr(data-content);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: red;
+    width: 0%;
+    white-space: nowrap;
+    overflow: hidden;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+}
+.menu-link:hover::before{
+    width: 100%;
+}
+.social-media{
+    position: absolute;
+    bottom: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media i{
+    font-size: 2.2rem;
+    margin: 3rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: #777;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    transition-duration: .3s;
+}
+
+.social-media i:hover{
+    background-color: red;
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    <script src="https://kit.fontawesome.com/87c062f18b.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2&family=Josefin+Slab&family=Nanum+Gothic&display=swap" rel="stylesheet">
     <script type="text/javascript" defer src="./javascript/home.js"></script>
@@ -9,7 +10,8 @@
     <title>Home</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <body>
-        <div class="hamburger-menu">
+        <div class="container">
+        <div class="hamburger-menu" id="hamburger-menu">
             <div class="line line-1"></div>
             <div class="line line-2"></div>
         </div>
@@ -25,5 +27,27 @@
                 <button class="homeButton">About</button>
             </div>
         </header>
+        <section class="sidebar" id="sidebar">
+            <ul class="menu">
+                <li class="menu-item">
+                    <a href="./index.html" class="menu-link" data-content="Home">Home</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link" data-content="Gallary">Gallary</a>
+                </li> 
+                <li class="menu-item"> 
+                    <a href="#" class="menu-link" data-content="About">About</a>
+                </li> 
+                <li class="menu-item"> 
+                    <a href="#" class="menu-link" data-content="Contact">Contact</a>
+                </li>
+            </ul>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </section>
+    </div>
     </body>
 </html>
