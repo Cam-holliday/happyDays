@@ -5,7 +5,9 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
+
 html{
     font-size: 62.5%;
 }
@@ -91,6 +93,8 @@ html{
     animation: moveBanner .9s forwards;
 }
 
+
+
 @keyframes moveBanner {
     0%{
         transform: translateY(40rem) rotateY(-20deg);
@@ -107,13 +111,18 @@ html{
     flex-direction: column;
     justify-content: space-evenly;
     cursor: pointer;
-    width: 6rem;
-    height: 3rem;
+    width: 5rem;
+    height: 5rem;
     position: fixed;
     top: 5rem;
     right: 5rem;
     z-index: 200;
+    transition: right 0.7s;
     
+}
+
+.change .hamburger-menu{
+    right: 33rem;
 }
 
 .line{
@@ -122,6 +131,25 @@ html{
     height: .2rem;
     background-color: white;
     box-shadow: 0.1rem 0.2rem rgba(0, 0, 0, .2);
+    transition:  .7s;
+}
+
+.change .line{
+    background-color: gray;
+    width: 4rem;
+}
+
+.change .line-1{
+    transform: rotate(45deg) translate(.3rem, .8rem);
+    
+}
+
+.change .line-2{
+    transform: rotate(-45deg) translate(.3rem, -0.9rem);
+}
+
+.hamburger-menu:hover > .line{
+    background-color: red;
 }
 /*
 .line-1{
@@ -137,6 +165,7 @@ html{
 }*/
 
 .sidebar{
+    
     width: 40rem;
     height: 100vh;
     position: fixed;
@@ -148,6 +177,7 @@ html{
 
 .change .sidebar{
     right: 0;
+    box-shadow: 10px 10px 30px gray;
 }
 
 .menu{
@@ -208,4 +238,57 @@ html{
 
 .social-media i:hover{
     background-color: red;
+}
+.about{
+    width: 100%;
+    height: 100vh;
+    padding-top: 7rem;
+    background-color: f5f5f5;
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column;
+    
+}
+/*
+.about-heading-wrapper{
+    width: 25%;
+    min-width: 260px;
+    height: 13vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.underline-about{
+    width: 20%;
+    height: 3px;
+    background-color: red;
+}
+
+.about-heading{
+    letter-spacing: .3rem;
+    margin-bottom: 2rem;
+    font-size: 4.5rem;
+    font-family: "Outfit", sans-serif;
+}
+*/
+.about-image{
+    border-radius: 50%;
+    width: calc(12vw + 100px);
+    height: calc(12vw + 100px);
+}
+.about-image-wrapper img{
+    object-fit: cover;
+    margin-bottom: 3rem;
+}
+
+.about-content{
+    width: 50%;
+    min-width: 270px;
+    text-align: center;
+    font-size: calc(1vw + 17px);
+    font-family: 'Josefin Slab', serif;
+    line-height: 3.5rem;
 }
