@@ -20,3 +20,8 @@ function change(){
 }
 
 document.getElementById("hamburger-menu").onclick = change*/
+
+function fullImage(){
+    document.getElementById("img").style.width = "500px";
+
+}
