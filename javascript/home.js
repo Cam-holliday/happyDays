@@ -113,3 +113,46 @@ document.querySelector(".img-box23").addEventListener("click", ()=>{
 document.querySelector(".img-box24").addEventListener("click", ()=>{
     document.querySelector(".img24").classList.toggle("trans")
 });
+
+
+let snap = document.getElementById("snap");
+let insta = document.getElementById("insta");
+let snapLink = document.getElementById("snapLink");
+let instaLink = document.getElementById("instaLink");
+snap.style.display = "none";
+insta.style.display = "none";
+let snapTester = 1;
+let instaTester = 1;
+
+
+function socialChangeSnap(){
+    
+    if(snapTester == 1){
+        insta.style.display = "none";
+        snap.style.display = "flex";
+        snapTester = 0;
+    }
+    else{
+        snap.style.display = "none";
+        snapTester = 1;
+    }
+    
+    
+}
+
+function socialChangeInsta(){
+    
+    if(instaTester == 1){
+        snap.style.display = "none";
+        insta.style.display = "block";
+        instaTester = 0
+    }
+    else{
+        insta.style.display = "none";
+        instaTester = 1
+    }
+}
+
+
+snapLink.addEventListener("click", socialChangeSnap)
+instaLink.addEventListener("click", socialChangeInsta)
